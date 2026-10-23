@@ -1,0 +1,8 @@
+Origen (Planta),Destino (Ciudad),Volumen (Unidades),Costo Unitario (USD/u),Costo Total Ruta (USD),Participación en Demanda Ciudad (%)
+P1,C2,300.0,15,4500.0,85.71428571428571
+P2,C1,250.0,10,2500.0,100.0
+P2,C2,50.0,14,700.0,14.285714285714285
+P2,C3,400.0,12,4800.0,100.0
+P3,C4,300.0,10,3000.0,100.0
+P3,C5,200.0,12,2400.0,100.0
+P3,C6,300.0,14,4200.0,100.0

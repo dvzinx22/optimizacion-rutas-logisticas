@@ -1,0 +1,4 @@
+Escenario,Costo Total Mensual (USD),Costo Anual Proyectado (USD),Ahorro Mensual vs Actual (USD),Ahorro Porcentual (%),Rutas Activas,Estado
+Escenario Actual Empírico (Sin Optimizar),28600.0,343200.0,0.0,0.0,Asignación rígida no coordinada,Ineficiente
+Modelo Óptimo LP (PuLP / OR-Tools),22100.0,265200.0,6500.0,22.727272727272727,7 rutas activas coordinadas,Óptimo Global
+Modelo MILP con Costo Fijo por Ruta ($150/ruta),23050.0,276600.0,5550.0,19.405594405594407,6 rutas activas,Óptimo con Fijos

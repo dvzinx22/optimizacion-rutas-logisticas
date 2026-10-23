@@ -1,0 +1,94 @@
+{
+    "model_training_metrics": {
+        "C1": {
+            "RMSE": 4.93,
+            "R2": 0.9497
+        },
+        "C2": {
+            "RMSE": 8.24,
+            "R2": 0.9243
+        },
+        "C3": {
+            "RMSE": 9.84,
+            "R2": 0.9416
+        },
+        "C4": {
+            "RMSE": 6.31,
+            "R2": 0.9518
+        },
+        "C5": {
+            "RMSE": 5.15,
+            "R2": 0.9224
+        },
+        "C6": {
+            "RMSE": 7.53,
+            "R2": 0.9262
+        }
+    },
+    "monte_carlo_analytics": {
+        "n_scenarios": 1000,
+        "expected_monthly_cost": 22213.59,
+        "standard_deviation": 842.42,
+        "best_case_p5": 20850.23,
+        "median_p50": 22176.3,
+        "worst_case_var95": 23629.71,
+        "risk_of_stockout_pct": 0.1,
+        "evpi_metric_usd": 113.59
+    },
+    "logistics_clustering": {
+        "C1": {
+            "Cluster_ID": 0,
+            "Cluster_Name": "Corredor Norte/Occidente (P1/P2)",
+            "Cost_Profile": [
+                12,
+                10,
+                20
+            ]
+        },
+        "C2": {
+            "Cluster_ID": 0,
+            "Cluster_Name": "Corredor Norte/Occidente (P1/P2)",
+            "Cost_Profile": [
+                15,
+                14,
+                18
+            ]
+        },
+        "C3": {
+            "Cluster_ID": 0,
+            "Cluster_Name": "Corredor Norte/Occidente (P1/P2)",
+            "Cost_Profile": [
+                20,
+                12,
+                15
+            ]
+        },
+        "C4": {
+            "Cluster_ID": 0,
+            "Cluster_Name": "Corredor Norte/Occidente (P1/P2)",
+            "Cost_Profile": [
+                18,
+                16,
+                10
+            ]
+        },
+        "C5": {
+            "Cluster_ID": 1,
+            "Cluster_Name": "Corredor Sur/Oriente (P3)",
+            "Cost_Profile": [
+                25,
+                18,
+                12
+            ]
+        },
+        "C6": {
+            "Cluster_ID": 1,
+            "Cluster_Name": "Corredor Sur/Oriente (P3)",
+            "Cost_Profile": [
+                30,
+                22,
+                14
+            ]
+        }
+    }
+}

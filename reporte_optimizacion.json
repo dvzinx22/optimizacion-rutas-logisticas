@@ -1,0 +1,163 @@
+{
+    "metadata": {
+        "title": "Optimización Global de Rutas Logísticas de Distribución",
+        "author": "Antigravity Operations Research & AI Suite",
+        "version": "2.0-Enterprise"
+    },
+    "baseline": {
+        "monthly_cost_usd": 28600.0,
+        "annual_cost_usd": 343200.0
+    },
+    "optimal_solution": {
+        "solver_pulp": "CBC-2.9.0",
+        "solver_ortools": "GLOP",
+        "monthly_cost_usd": 22100.0,
+        "annual_cost_usd": 265200.0,
+        "savings_monthly_usd": 6500.0,
+        "savings_annual_usd": 78000.0,
+        "savings_percentage": 22.7273,
+        "allocation_matrix": {
+            "P1": {
+                "C1": 0.0,
+                "C2": 300.0,
+                "C3": 0.0,
+                "C4": 0.0,
+                "C5": 0.0,
+                "C6": 0.0
+            },
+            "P2": {
+                "C1": 250.0,
+                "C2": 50.0,
+                "C3": 400.0,
+                "C4": 0.0,
+                "C5": 0.0,
+                "C6": 0.0
+            },
+            "P3": {
+                "C1": 0.0,
+                "C2": 0.0,
+                "C3": 0.0,
+                "C4": 300.0,
+                "C5": 200.0,
+                "C6": 300.0
+            }
+        },
+        "supply_usage": [
+            {
+                "Planta": "P1",
+                "Capacidad Máxima (u)": 500,
+                "Producción Despachada (u)": 300.0,
+                "Capacidad Ociosa / Holgura (u)": 200.0,
+                "Tasa de Utilización (%)": 60.0,
+                "Precio Sombra Dual (USD)": 0.0
+            },
+            {
+                "Planta": "P2",
+                "Capacidad Máxima (u)": 700,
+                "Producción Despachada (u)": 700.0,
+                "Capacidad Ociosa / Holgura (u)": 0.0,
+                "Tasa de Utilización (%)": 100.0,
+                "Precio Sombra Dual (USD)": -1.0
+            },
+            {
+                "Planta": "P3",
+                "Capacidad Máxima (u)": 800,
+                "Producción Despachada (u)": 800.0,
+                "Capacidad Ociosa / Holgura (u)": 0.0,
+                "Tasa de Utilización (%)": 100.0,
+                "Precio Sombra Dual (USD)": 0.0
+            }
+        ],
+        "active_routes": [
+            {
+                "Origen (Planta)": "P1",
+                "Destino (Ciudad)": "C2",
+                "Volumen (Unidades)": 300.0,
+                "Costo Unitario (USD/u)": 15,
+                "Costo Total Ruta (USD)": 4500.0,
+                "Participación en Demanda Ciudad (%)": 85.71428571428571
+            },
+            {
+                "Origen (Planta)": "P2",
+                "Destino (Ciudad)": "C1",
+                "Volumen (Unidades)": 250.0,
+                "Costo Unitario (USD/u)": 10,
+                "Costo Total Ruta (USD)": 2500.0,
+                "Participación en Demanda Ciudad (%)": 100.0
+            },
+            {
+                "Origen (Planta)": "P2",
+                "Destino (Ciudad)": "C2",
+                "Volumen (Unidades)": 50.0,
+                "Costo Unitario (USD/u)": 14,
+                "Costo Total Ruta (USD)": 700.0,
+                "Participación en Demanda Ciudad (%)": 14.285714285714285
+            },
+            {
+                "Origen (Planta)": "P2",
+                "Destino (Ciudad)": "C3",
+                "Volumen (Unidades)": 400.0,
+                "Costo Unitario (USD/u)": 12,
+                "Costo Total Ruta (USD)": 4800.0,
+                "Participación en Demanda Ciudad (%)": 100.0
+            },
+            {
+                "Origen (Planta)": "P3",
+                "Destino (Ciudad)": "C4",
+                "Volumen (Unidades)": 300.0,
+                "Costo Unitario (USD/u)": 10,
+                "Costo Total Ruta (USD)": 3000.0,
+                "Participación en Demanda Ciudad (%)": 100.0
+            },
+            {
+                "Origen (Planta)": "P3",
+                "Destino (Ciudad)": "C5",
+                "Volumen (Unidades)": 200.0,
+                "Costo Unitario (USD/u)": 12,
+                "Costo Total Ruta (USD)": 2400.0,
+                "Participación en Demanda Ciudad (%)": 100.0
+            },
+            {
+                "Origen (Planta)": "P3",
+                "Destino (Ciudad)": "C6",
+                "Volumen (Unidades)": 300.0,
+                "Costo Unitario (USD/u)": 14,
+                "Costo Total Ruta (USD)": 4200.0,
+                "Participación en Demanda Ciudad (%)": 100.0
+            }
+        ]
+    },
+    "milp_fixed_routes_solution": {
+        "fixed_cost_per_route": 150.0,
+        "total_monthly_cost_usd": 23050.0,
+        "variable_cost_usd": 22150.0,
+        "fixed_cost_usd": 900.0,
+        "active_routes_count": 6,
+        "active_routes_matrix": {
+            "P1": {
+                "C1": 0,
+                "C2": 1,
+                "C3": 0,
+                "C4": 0,
+                "C5": 0,
+                "C6": 0
+            },
+            "P2": {
+                "C1": 1,
+                "C2": 0,
+                "C3": 1,
+                "C4": 0,
+                "C5": 0,
+                "C6": 0
+            },
+            "P3": {
+                "C1": 0,
+                "C2": 0,
+                "C3": 0,
+                "C4": 1,
+                "C5": 1,
+                "C6": 1
+            }
+        }
+    }
+}
